@@ -1,0 +1,47 @@
+.prayer {
+    text-align: center; /* Center-align text */
+    margin: 1em; /* Add margin around each prayer item */
+    flex: 1 1 calc(20% - 2em); /* Allow each item to take 20% of the width minus margin */
+    min-width: 150px; /* Minimum width to maintain a good look on small screens */
+  }
+  
+  /* Adjust the font sizes for the Prayer component */
+  .prayer h3 {
+    font-size: 2.5vw; /* Responsive font size for titles */
+  }
+  
+  .prayer p {
+    font-size: 2vw; /* Responsive font size for times */
+  }
+  
+  .prayer {
+    display: flex;
+    flex-direction: column; /* ترتيب عمودي للعنوان والوقت */
+    align-items: center;
+    text-align: center;
+  }
+  
+  .prayer-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .prayer-time {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  
+  @media (min-width: 960px) {
+    .prayer {
+      flex-direction: column; /* في الشاشات الكبيرة يبقى الترتيب عموديًا */
+    }
+  
+    .prayer-title {
+      font-size: 2rem; /* تكبير الخط في الشاشات الكبيرة */
+    }
+  
+    .prayer-time {
+      font-size: 1.5rem;
+    }
+  }
+  
